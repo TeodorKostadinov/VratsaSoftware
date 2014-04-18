@@ -22,5 +22,10 @@ namespace Test2.Controllers
 		{
 			return View();
 		}
+		
+		public ActionResult firstView()
+		{
+			return View();
+		}
 	}
 }
