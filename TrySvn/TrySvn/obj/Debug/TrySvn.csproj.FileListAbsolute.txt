@@ -9,3 +9,14 @@ C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFrame
 C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFramework.SqlServer.xml
 C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.Migrations.FirstModel.resources
 C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.csproj.GenerateResource.Cache
+C:\Development\VS github repo\TrySvn\TrySvn\bin\TrySvn.dll
+C:\Development\VS github repo\TrySvn\TrySvn\bin\TrySvn.pdb
+C:\Development\VS github repo\TrySvn\TrySvn\bin\EntityFramework.dll
+C:\Development\VS github repo\TrySvn\TrySvn\bin\EntityFramework.SqlServer.dll
+C:\Development\VS github repo\TrySvn\TrySvn\bin\EntityFramework.xml
+C:\Development\VS github repo\TrySvn\TrySvn\bin\EntityFramework.SqlServer.xml
+C:\Development\VS github repo\TrySvn\TrySvn\obj\Debug\TrySvn.csprojResolveAssemblyReference.cache
+C:\Development\VS github repo\TrySvn\TrySvn\obj\Debug\TrySvn.Migrations.FirstModel.resources
+C:\Development\VS github repo\TrySvn\TrySvn\obj\Debug\TrySvn.csproj.GenerateResource.Cache
+C:\Development\VS github repo\TrySvn\TrySvn\obj\Debug\TrySvn.dll
+C:\Development\VS github repo\TrySvn\TrySvn\obj\Debug\TrySvn.pdb

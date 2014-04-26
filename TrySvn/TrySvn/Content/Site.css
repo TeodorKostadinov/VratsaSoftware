@@ -2,10 +2,10 @@
 body
 {
 	font-family: Verdana, sans-serif;
-	margin: 0;
-	padding: 0;
+	margin: 100px;
+	padding: 100px;
 	text-align: center;
-	background-color: #709ad1;
+	background-color: green;
 }
 
 h1 
