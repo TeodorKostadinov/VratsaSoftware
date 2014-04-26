@@ -87,7 +87,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\Agencies.css" />
     <None Include="Content\ModelsCSS.css" />
     <None Include="Content\Site.css" />
     <None Include="Global.asax" />
