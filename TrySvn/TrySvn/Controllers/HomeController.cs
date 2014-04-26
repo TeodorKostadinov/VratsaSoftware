@@ -22,5 +22,10 @@ namespace TrySvn.Controllers
 		{
 			return View();
 		}
+		
+		public ActionResult FirstModel()
+		{
+			return View();
+		}
 	}
 }
