@@ -1,5 +1,0 @@
-D:\Teo\VratsaSoftware\repo\StudentsAtWOrk\TestProject\bin\TestProject.dll
-D:\Teo\VratsaSoftware\repo\StudentsAtWOrk\TestProject\bin\TestProject.pdb
-D:\Teo\VratsaSoftware\repo\StudentsAtWOrk\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
-D:\Teo\VratsaSoftware\repo\StudentsAtWOrk\TestProject\obj\Debug\TestProject.dll
-D:\Teo\VratsaSoftware\repo\StudentsAtWOrk\TestProject\obj\Debug\TestProject.pdb
