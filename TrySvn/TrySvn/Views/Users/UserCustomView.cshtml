@@ -1,0 +1,47 @@
+﻿
+@model TrySvn.Models.User
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UserCustomView</title>
+	</head>
+	<body>
+		<div>
+		
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+@using (Html.BeginForm())
+{
+
+        <legend>User</legend>
+
+		<div class="editor-label">
+    @Html.LabelFor(model => model.Email)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Password)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Password)
+    @Html.ValidationMessageFor(model => model.Password)
+</div>
+
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+
+
+
+
+}
+
+
+		</div>
+	</body>
+</html>
