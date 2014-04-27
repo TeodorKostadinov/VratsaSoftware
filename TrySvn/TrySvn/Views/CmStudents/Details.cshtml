@@ -1,0 +1,29 @@
+@model TrySvn.Models.CmStudent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CmStudent</legend>
+
+    <div class="display-label">yearStudy</div>
+    <div class="display-field">@Model.yearStudy</div>
+
+    <div class="display-label">course</div>
+    <div class="display-field">@Model.course</div>
+
+    <div class="display-label">cmUser</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.cmUser).ToString()</div>
+
+    <div class="display-label">clUniversity</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.clUniversity).ToString()</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

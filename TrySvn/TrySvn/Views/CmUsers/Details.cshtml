@@ -1,0 +1,29 @@
+@model TrySvn.Models.CmUser
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CmUser</legend>
+
+    <div class="display-label">email</div>
+    <div class="display-field">@Model.email</div>
+
+    <div class="display-label">password</div>
+    <div class="display-field">@Model.password</div>
+
+    <div class="display-label">firstName</div>
+    <div class="display-field">@Model.firstName</div>
+
+    <div class="display-label">lastName</div>
+    <div class="display-field">@Model.lastName</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

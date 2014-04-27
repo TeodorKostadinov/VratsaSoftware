@@ -1,0 +1,26 @@
+@model TrySvn.Models.ClUniversity
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>ClUniversity</legend>
+
+    <div class="display-label">uniName</div>
+    <div class="display-field">@Model.uniName</div>
+
+    <div class="display-label">uniCity</div>
+    <div class="display-field">@Model.uniCity</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+
