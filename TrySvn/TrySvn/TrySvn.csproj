@@ -77,6 +77,7 @@
     <Compile Include="Controllers\CmUsersController.cs" />
     <Compile Include="Controllers\FirstModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -84,6 +85,7 @@
     <Compile Include="Migrations\201404221902537_FirstModel.Designer.cs">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201404270950515_LogInTest.cs" />
     <Compile Include="Migrations\201404270950515_LogInTest.Designer.cs">
       <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
@@ -94,6 +96,15 @@
     <Compile Include="Models\CmStudent.cs" />
     <Compile Include="Models\CmTeacher.cs" />
     <Compile Include="Models\CmUser.cs" />
+=======
+    <Compile Include="Migrations\201404261418344_AddUser.cs" />
+    <Compile Include="Migrations\201404261418344_AddUser.Designer.cs">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Agency.cs" />
+    <Compile Include="Models\User.cs" />
+>>>>>>> 969f18c80d76e30b5f329cd33da17bbc652c5dfa
     <Compile Include="Models\FirstModel.cs" />
     <Compile Include="Models\TrySvnContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +157,13 @@
     <None Include="Views\Home\Contact.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Users\Create.cshtml" />
+    <None Include="Views\Users\Delete.cshtml" />
+    <None Include="Views\Users\Details.cshtml" />
+    <None Include="Views\Users\Edit.cshtml" />
+    <None Include="Views\Users\Index.cshtml" />
+    <None Include="Views\Users\UserCustomView.cshtml" />
+    <None Include="Views\Users\_CreateOrEdit.cshtml" />
     <None Include="Views\web.config" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="web.config" />
@@ -158,13 +176,19 @@
     <Folder Include="Views\CmTeachers" />
     <Folder Include="Views\CmUsers" />
     <Folder Include="Views\FirstModels" />
+    <Folder Include="Views\Users" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201404221902537_FirstModel.resx">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201404270950515_LogInTest.resx">
       <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+>>>>>>> 969f18c80d76e30b5f329cd33da17bbc652c5dfa
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
