@@ -23,5 +23,11 @@ namespace TrySvn.Models
 		public DbSet<TrySvn.Models.Agency> Agencies { get; set; }
     	
 		public DbSet<TrySvn.Models.User> Users { get; set; }
+    	
+		public DbSet<TrySvn.Models.ClUniversity> ClUniversities { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmStudent> CmStudents { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmTeacher> CmTeachers { get; set; }
     }
 }

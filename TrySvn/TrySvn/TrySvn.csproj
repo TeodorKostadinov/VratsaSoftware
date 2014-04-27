@@ -71,6 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AgenciesController.cs" />
+    <Compile Include="Controllers\ClUniversitiesController.cs" />
+    <Compile Include="Controllers\CmStudentsController.cs" />
+    <Compile Include="Controllers\CmTeachersController.cs" />
     <Compile Include="Controllers\FirstModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -85,8 +88,15 @@
     <Compile Include="Migrations\201404261418344_AddUser.Designer.cs">
       <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201404271248528_TryAuthentication.cs" />
+    <Compile Include="Migrations\201404271248528_TryAuthentication.Designer.cs">
+      <DependentUpon>201404271248528_TryAuthentication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agency.cs" />
+    <Compile Include="Models\ClUniversity.cs" />
+    <Compile Include="Models\CmStudent.cs" />
+    <Compile Include="Models\CmTeacher.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\FirstModel.cs" />
     <Compile Include="Models\TrySvnContext.cs" />
@@ -107,6 +117,24 @@
     <None Include="Views\Agencies\Edit.cshtml" />
     <None Include="Views\Agencies\Index.cshtml" />
     <None Include="Views\Agencies\_CreateOrEdit.cshtml" />
+    <None Include="Views\ClUniversities\Create.cshtml" />
+    <None Include="Views\ClUniversities\Delete.cshtml" />
+    <None Include="Views\ClUniversities\Details.cshtml" />
+    <None Include="Views\ClUniversities\Edit.cshtml" />
+    <None Include="Views\ClUniversities\Index.cshtml" />
+    <None Include="Views\ClUniversities\_CreateOrEdit.cshtml" />
+    <None Include="Views\CmStudents\Create.cshtml" />
+    <None Include="Views\CmStudents\Delete.cshtml" />
+    <None Include="Views\CmStudents\Details.cshtml" />
+    <None Include="Views\CmStudents\Edit.cshtml" />
+    <None Include="Views\CmStudents\Index.cshtml" />
+    <None Include="Views\CmStudents\_CreateOrEdit.cshtml" />
+    <None Include="Views\CmTeachers\Create.cshtml" />
+    <None Include="Views\CmTeachers\Delete.cshtml" />
+    <None Include="Views\CmTeachers\Details.cshtml" />
+    <None Include="Views\CmTeachers\Edit.cshtml" />
+    <None Include="Views\CmTeachers\Index.cshtml" />
+    <None Include="Views\CmTeachers\_CreateOrEdit.cshtml" />
     <None Include="Views\FirstModels\Create.cshtml" />
     <None Include="Views\FirstModels\Delete.cshtml" />
     <None Include="Views\FirstModels\Details.cshtml" />
@@ -121,6 +149,7 @@
     <None Include="Views\Users\Details.cshtml" />
     <None Include="Views\Users\Edit.cshtml" />
     <None Include="Views\Users\Index.cshtml" />
+    <None Include="Views\Users\Index2.cshtml" />
     <None Include="Views\Users\UserCustomView.cshtml" />
     <None Include="Views\Users\_CreateOrEdit.cshtml" />
     <None Include="Views\web.config" />
@@ -130,6 +159,9 @@
   <ItemGroup>
     <Folder Include="Models" />
     <Folder Include="Views\Agencies" />
+    <Folder Include="Views\ClUniversities" />
+    <Folder Include="Views\CmStudents" />
+    <Folder Include="Views\CmTeachers" />
     <Folder Include="Views\FirstModels" />
     <Folder Include="Views\Users" />
   </ItemGroup>
@@ -139,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
       <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404271248528_TryAuthentication.resx">
+      <DependentUpon>201404271248528_TryAuthentication.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

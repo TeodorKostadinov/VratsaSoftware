@@ -13,10 +13,32 @@ namespace TrySvn.Controllers
     {
         private TrySvnContext context = new TrySvnContext();
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+        
+         
+        [HttpPost]
+		public ActionResult Index(string role)
+		{
+		    if (ModelState.IsValid)
+		    {
+		    	if(role == "Student")
+		    	{
+		    	   return RedirectToAction("Create"); 
+		    	}
+		    	else{
+		    	   	return RedirectToAction("Index2"); 
+		    	}
+   			}
+    		//to do : reload questions and answers
+    		return View(role);
+		}
         //
         // GET: /Users/
 
-        public ViewResult Index()
+        public ViewResult Index2()
         {
             return View(context.Users.ToList());
         }
@@ -142,11 +164,6 @@ namespace TrySvn.Controllers
         }
         
         #region Private Methods
-        
-        private bool IsValidUser(string username, string pass)
-        {
-        	// Check whether we have record for this user
-        }
         
         #endregion // Private Methods
     }

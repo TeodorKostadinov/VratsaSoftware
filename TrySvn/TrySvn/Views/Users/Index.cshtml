@@ -1,53 +1,19 @@
-@model IEnumerable<TrySvn.Models.User>
-
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Register";
 }
 
-<h2>Index</h2>
+<h2>Register</h2>
+
+@using (Html.BeginForm("Index", "Users")) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>User</legend>
+
+		<input type='radio' name='role' value='Student'>Student
+		<input type='radio' name='role' value='Teacher'>Teacher
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+            <input type="submit" value="Next" />
 </p>
-<table>
-    <tr>
-        <th></th>
-        <th>
-            FirstName
-        </th>
-        <th>
-            LastName
-        </th>
-        <th>
-            Email
-        </th>
-        <th>
-            Password
-        </th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-        <td>
-			@item.FirstName
-        </td>
-        <td>
-			@item.LastName
-        </td>
-        <td>
-			@item.Email
-        </td>
-        <td>
-			@item.Password
-        </td>
-    </tr>
+    </fieldset>
 }
-
-</table>
-
-
