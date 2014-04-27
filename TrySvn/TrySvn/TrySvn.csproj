@@ -85,14 +85,16 @@
     <Compile Include="Migrations\201404221902537_FirstModel.Designer.cs">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Migrations\201404270950515_LogInTest.cs" />
+    <Compile Include="Migrations\201404261418344_AddUser.cs" />
+    <Compile Include="Migrations\201404261418344_AddUser.Designer.cs">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+ </Compile>
+<Compile Include="Migrations\201404270950515_LogInTest.cs" />
     <Compile Include="Migrations\201404270950515_LogInTest.Designer.cs">
       <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agency.cs" />
-    <Compile Include="Models\ClUniversity.cs" />
     <Compile Include="Models\CmStudent.cs" />
     <Compile Include="Models\CmTeacher.cs" />
     <Compile Include="Models\CmUser.cs" />
@@ -182,15 +184,13 @@
     <EmbeddedResource Include="Migrations\201404221902537_FirstModel.resx">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201404270950515_LogInTest.resx">
       <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
-=======
     <EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
       <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
->>>>>>> 969f18c80d76e30b5f329cd33da17bbc652c5dfa
-    </EmbeddedResource>
-  </ItemGroup>
+<EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+    </EmbeddedResource>  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
