@@ -1,0 +1,33 @@
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\TrySvn.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\TrySvn.pdb
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.csprojResolveAssemblyReference.cache
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.pdb
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFramework.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFramework.SqlServer.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFramework.xml
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\bin\EntityFramework.SqlServer.xml
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.Migrations.FirstModel.resources
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\TrySvn\TrySvn\obj\Debug\TrySvn.csproj.GenerateResource.Cache
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\TrySvn.dll
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\TrySvn.pdb
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\EntityFramework.dll
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\EntityFramework.SqlServer.dll
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\EntityFramework.xml
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\bin\EntityFramework.SqlServer.xml
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\obj\Debug\TrySvn.csprojResolveAssemblyReference.cache
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\obj\Debug\TrySvn.Migrations.FirstModel.resources
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\obj\Debug\TrySvn.csproj.GenerateResource.Cache
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\obj\Debug\TrySvn.dll
+D:\Teo\VratsaSoftware\TrySvn\TrySvn\obj\Debug\TrySvn.pdb
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\TrySvn.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\TrySvn.pdb
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\EntityFramework.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\EntityFramework.SqlServer.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\EntityFramework.xml
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\bin\EntityFramework.SqlServer.xml
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\obj\Debug\TrySvn.csprojResolveAssemblyReference.cache
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\obj\Debug\TrySvn.Migrations.FirstModel.resources
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\obj\Debug\TrySvn.csproj.GenerateResource.Cache
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\obj\Debug\TrySvn.dll
+C:\Users\ekadiyski\Documents\SharpDevelop Projects\sw\TrySvn\TrySvn\obj\Debug\TrySvn.pdb
