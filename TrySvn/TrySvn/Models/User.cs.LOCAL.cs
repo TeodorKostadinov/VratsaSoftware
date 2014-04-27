@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: ID
- * Date: 4/26/2014
- * Time: 5:12 PM
+ * User: Teodor
+ * Date: 27-Apr-14
+ * Time: 11:24
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -15,10 +15,10 @@ namespace TrySvn.Models
 	/// </summary>
 	public class User
 	{
-		public int ID {get; set;}
-		public string FirstName {get; set;}
-		public string LastName {get; set;}
-		public string Email {get; set;}
-		public string Password {get; set;}
+		public int ID {get;set;}
+		public String firstName {get;set;}
+		public String lastName {get;set;}
+		public String email {get;set;}
+		public String password {get;set;}
 	}
 }

@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
     <StartAction>Program</StartAction>
-    <StartProgram>..\..\..\..\..\..\Program Files\IIS Express\iisexpress.exe</StartProgram>
+    <StartProgram>..\..\..\..\..\..\..\Program Files\IIS Express\iisexpress.exe</StartProgram>
     <StartArguments>/config:C:\applicationhost.config /siteid:1</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -71,8 +71,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AgenciesController.cs" />
+    <Compile Include="Controllers\ClUniversitiesController.cs" />
+    <Compile Include="Controllers\CmStudentsController.cs" />
+    <Compile Include="Controllers\CmTeachersController.cs" />
+    <Compile Include="Controllers\CmUsersController.cs" />
     <Compile Include="Controllers\FirstModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -80,8 +85,28 @@
     <Compile Include="Migrations\201404221902537_FirstModel.Designer.cs">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201404261418344_AddUser.cs" />
+    <Compile Include="Migrations\201404261418344_AddUser.Designer.cs">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+ </Compile>
+<Compile Include="Migrations\201404270950515_LogInTest.cs" />
+    <Compile Include="Migrations\201404270950515_LogInTest.Designer.cs">
+      <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agency.cs" />
+    <Compile Include="Models\CmStudent.cs" />
+    <Compile Include="Models\CmTeacher.cs" />
+    <Compile Include="Models\CmUser.cs" />
+=======
+    <Compile Include="Migrations\201404261418344_AddUser.cs" />
+    <Compile Include="Migrations\201404261418344_AddUser.Designer.cs">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Agency.cs" />
+    <Compile Include="Models\User.cs" />
+>>>>>>> 969f18c80d76e30b5f329cd33da17bbc652c5dfa
     <Compile Include="Models\FirstModel.cs" />
     <Compile Include="Models\TrySvnContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +126,30 @@
     <None Include="Views\Agencies\Edit.cshtml" />
     <None Include="Views\Agencies\Index.cshtml" />
     <None Include="Views\Agencies\_CreateOrEdit.cshtml" />
+    <None Include="Views\ClUniversities\Create.cshtml" />
+    <None Include="Views\ClUniversities\Delete.cshtml" />
+    <None Include="Views\ClUniversities\Details.cshtml" />
+    <None Include="Views\ClUniversities\Edit.cshtml" />
+    <None Include="Views\ClUniversities\Index.cshtml" />
+    <None Include="Views\ClUniversities\_CreateOrEdit.cshtml" />
+    <None Include="Views\CmStudents\Create.cshtml" />
+    <None Include="Views\CmStudents\Delete.cshtml" />
+    <None Include="Views\CmStudents\Details.cshtml" />
+    <None Include="Views\CmStudents\Edit.cshtml" />
+    <None Include="Views\CmStudents\Index.cshtml" />
+    <None Include="Views\CmStudents\_CreateOrEdit.cshtml" />
+    <None Include="Views\CmTeachers\Create.cshtml" />
+    <None Include="Views\CmTeachers\Delete.cshtml" />
+    <None Include="Views\CmTeachers\Details.cshtml" />
+    <None Include="Views\CmTeachers\Edit.cshtml" />
+    <None Include="Views\CmTeachers\Index.cshtml" />
+    <None Include="Views\CmTeachers\_CreateOrEdit.cshtml" />
+    <None Include="Views\CmUsers\Create.cshtml" />
+    <None Include="Views\CmUsers\Delete.cshtml" />
+    <None Include="Views\CmUsers\Details.cshtml" />
+    <None Include="Views\CmUsers\Edit.cshtml" />
+    <None Include="Views\CmUsers\Index.cshtml" />
+    <None Include="Views\CmUsers\_CreateOrEdit.cshtml" />
     <None Include="Views\FirstModels\Create.cshtml" />
     <None Include="Views\FirstModels\Delete.cshtml" />
     <None Include="Views\FirstModels\Details.cshtml" />
@@ -110,6 +159,13 @@
     <None Include="Views\Home\Contact.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Users\Create.cshtml" />
+    <None Include="Views\Users\Delete.cshtml" />
+    <None Include="Views\Users\Details.cshtml" />
+    <None Include="Views\Users\Edit.cshtml" />
+    <None Include="Views\Users\Index.cshtml" />
+    <None Include="Views\Users\UserCustomView.cshtml" />
+    <None Include="Views\Users\_CreateOrEdit.cshtml" />
     <None Include="Views\web.config" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="web.config" />
@@ -117,13 +173,24 @@
   <ItemGroup>
     <Folder Include="Models" />
     <Folder Include="Views\Agencies" />
+    <Folder Include="Views\ClUniversities" />
+    <Folder Include="Views\CmStudents" />
+    <Folder Include="Views\CmTeachers" />
+    <Folder Include="Views\CmUsers" />
     <Folder Include="Views\FirstModels" />
+    <Folder Include="Views\Users" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201404221902537_FirstModel.resx">
       <DependentUpon>201404221902537_FirstModel.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
+    <EmbeddedResource Include="Migrations\201404270950515_LogInTest.resx">
+      <DependentUpon>201404270950515_LogInTest.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+<EmbeddedResource Include="Migrations\201404261418344_AddUser.resx">
+      <DependentUpon>201404261418344_AddUser.cs</DependentUpon>
+    </EmbeddedResource>  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
