@@ -1,0 +1,49 @@
+﻿@model TrySvn.Models.User
+@{
+    ViewBag.Title = "CreateTeacher";
+}
+
+<h2>New Teacher</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Teacher Data</legend>
+
+		@Html.Partial("_CreateOrEdit", Model)
+		
+		<div class="editor-label">
+   			Teacher Title: 
+		</div>
+		<div class="editor-field">
+			<input type='radio' name='teacherTitle' value='no'>No title
+			<input type='radio' name='teacherTitle' value='as.'>As.	
+			<input type='radio' name='teacherTitle' value='doc.'>Doc.
+			<input type='radio' name='teacherTitle' value='prof.'>Prof.
+		</div>
+		
+		<div class="editor-label">
+		    University
+		</div>
+		
+		<div class="editor-field">
+		    <select name="clUniversityId">
+		    	@foreach (var item in ViewData["ClUniversitiesList"] 
+                as List <TrySvn.Models.ClUniversity>)
+                {         
+                     <option value="@item.ID">@item.uniName </option>     
+                }
+			</select>
+		</div>
+
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+  }
+
+
+
+
+

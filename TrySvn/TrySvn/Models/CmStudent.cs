@@ -16,12 +16,16 @@ namespace TrySvn.Models
 	public class CmStudent
 	{
 		public int ID{get; set;}
-		public String title{get; set;}
+		//Which year of study is the student
+		public byte courseYear{get; set;}
+		public String course{get; set;}
 		
 		public int userID{get; set;}
 		public User user{get; set;}
 		
 		public int clUniversityId{get; set;}
 		public ClUniversity clUniversity{get; set;}
+		
+		
 	}
 }

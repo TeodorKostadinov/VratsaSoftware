@@ -11,6 +11,8 @@ namespace TrySvn.Controllers
 {   
     public class UsersController : Controller
     {
+    	//Repository _repository = new Repository(); TODO - not working    
+    	
         private TrySvnContext context = new TrySvnContext();
 
         public ActionResult Index()
@@ -26,10 +28,10 @@ namespace TrySvn.Controllers
 		    {
 		    	if(role == "Student")
 		    	{
-		    	   return RedirectToAction("Create"); 
+		    	   return RedirectToAction("CreateStudent"); 
 		    	}
 		    	else{
-		    	   	return RedirectToAction("Index2"); 
+		    	   	return RedirectToAction("CreateTeacher"); 
 		    	}
    			}
     		//to do : reload questions and answers
@@ -109,7 +111,74 @@ namespace TrySvn.Controllers
 
             return View(user);
         }
+
+
+        // GET: /Users/CreateTeacher
+        public ActionResult CreateTeacher()
+        {
+        	ViewData["clUniversitiesList"] = context.ClUniversities.ToList();
+        	return View();
+        } 
+
+        // POST: /Users/CreateTeacher
+        [HttpPost]
+        public ActionResult CreateTeacher(User user, string teacherTitle, int clUniversityId)
+        {
         
+            if (ModelState.IsValid)
+            {
+            	context.Users.Add(user);
+                
+                CmTeacher newTeacher = new CmTeacher();
+                newTeacher.userID = user.ID;//TODO - probably
+                newTeacher.clUniversityId = clUniversityId;
+                if(teacherTitle.Equals("no")){
+                	newTeacher.title = "";
+                } else {
+                	newTeacher.title = teacherTitle;	
+                }
+                
+                context.CmTeachers.Add(newTeacher);
+                context.SaveChanges();
+                return RedirectToAction("Index");  
+            }
+
+            return View(user);
+        }
+
+
+// GET: /Users/CreateTeacher
+        public ActionResult CreateStudent()
+        {
+        	ViewData["clUniversitiesList"] = context.ClUniversities.ToList();
+        	return View();
+        } 
+
+        // POST: /Users/CreateTeacher
+        [HttpPost]
+        public ActionResult CreateStudent(User user, string course, byte courseYear, int clUniversityId)
+        {
+        
+            if (ModelState.IsValid)
+            {
+            	context.Users.Add(user);
+                
+                CmStudent newStudent = new CmStudent();
+                newStudent.userID = user.ID;
+                newStudent.clUniversityId = clUniversityId;
+                if(courseYear.Equals(6)){
+                	newStudent.courseYear = 6;
+                } else {
+                	newStudent.courseYear = courseYear;	
+                }
+                
+                context.CmStudents.Add(newStudent);
+                context.SaveChanges();
+                return RedirectToAction("Index");  
+            }
+
+            return View(user);
+        }        
         //
         // GET: /Users/Edit/5
  

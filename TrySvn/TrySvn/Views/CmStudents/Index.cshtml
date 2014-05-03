@@ -13,7 +13,10 @@
     <tr>
         <th></th>
         <th>
-            title
+            courseYear
+        </th>
+        <th>
+            course
         </th>
         <th>
             user
@@ -31,7 +34,10 @@
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
         <td>
-			@item.title
+			@item.courseYear
+        </td>
+        <td>
+			@item.course
         </td>
         <td>
 			@(item.user == null ? "None" : item.user.LastName)

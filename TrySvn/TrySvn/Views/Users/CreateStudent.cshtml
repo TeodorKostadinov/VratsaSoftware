@@ -1,0 +1,60 @@
+﻿@model TrySvn.Models.User
+@{
+    ViewBag.Title = "CreateTeacher";
+}
+
+<h2>New Teacher</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Teacher Data</legend>
+
+		@Html.Partial("_CreateOrEdit", Model)
+		
+		<div class="editor-label">
+		    University
+		</div>
+		
+		<div class="editor-field">
+		    <select name="clUniversityId">
+		    	@foreach (var item in ViewData["ClUniversitiesList"] 
+                as List <TrySvn.Models.ClUniversity>)
+                {         
+                     <option value="@item.ID">@item.uniName </option>     
+                }
+			</select>
+		</div>
+		
+		<div class="editor-label">
+   			Course field: 
+		</div>
+		<div class="editor-field">
+			<input type='radio' name='course' value='Информатика'>Информатика
+			<input type='radio' name='course' value='КН'>КН
+			<input type='radio' name='course' value='Софтуерни инженерство'>Софтуерни инженерство
+			<input type='radio' name='course' value='Информационни системи'>Информационни системи
+		</div>
+		
+		<div class="editor-label">
+   			Year of Study: 
+		</div>
+		<div class="editor-field">
+			<input type='radio' name='courseYear' value='1'>1
+			<input type='radio' name='courseYear' value='2'>2
+			<input type='radio' name='courseYear' value='3'>3
+			<input type='radio' name='courseYear' value='4'>4
+			<input type='radio' name='courseYear' value='5'>5
+			<input type='radio' name='courseYear' value='6'>Друг
+		</div>
+		
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+  }
+
+
+
+
+

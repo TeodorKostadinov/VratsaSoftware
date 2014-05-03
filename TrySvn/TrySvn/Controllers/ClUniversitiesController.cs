@@ -97,7 +97,7 @@ namespace TrySvn.Controllers
             context.ClUniversities.Remove(cluniversity);
             context.SaveChanges();
             return RedirectToAction("Index");
-        }
+        }		
 
         protected override void Dispose(bool disposing)
         {

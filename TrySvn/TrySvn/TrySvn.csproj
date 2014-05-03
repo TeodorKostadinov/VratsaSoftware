@@ -92,6 +92,10 @@
     <Compile Include="Migrations\201404271248528_TryAuthentication.Designer.cs">
       <DependentUpon>201404271248528_TryAuthentication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201405031821210_changeCmStudent.cs" />
+    <Compile Include="Migrations\201405031821210_changeCmStudent.Designer.cs">
+      <DependentUpon>201405031821210_changeCmStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\ClUniversity.cs" />
@@ -145,6 +149,8 @@
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Users\Create.cshtml" />
+    <None Include="Views\Users\CreateStudent.cshtml" />
+    <None Include="Views\Users\CreateTeacher.cshtml" />
     <None Include="Views\Users\Delete.cshtml" />
     <None Include="Views\Users\Details.cshtml" />
     <None Include="Views\Users\Edit.cshtml" />
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201404271248528_TryAuthentication.resx">
       <DependentUpon>201404271248528_TryAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405031821210_changeCmStudent.resx">
+      <DependentUpon>201405031821210_changeCmStudent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
