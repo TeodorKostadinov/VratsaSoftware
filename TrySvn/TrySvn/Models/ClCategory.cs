@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: ekadiyski
- * Date: 5/4/2014
- * Time: 10:20 AM
+ * Date: 5/6/2014
+ * Time: 12:49 PM
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -16,6 +16,6 @@ namespace TrySvn.Models
 	public class ClCategory
 	{
 		public int ID{get; set;}
-		public string category{get; set;}
+		public string name{get; set;}
 	}
 }

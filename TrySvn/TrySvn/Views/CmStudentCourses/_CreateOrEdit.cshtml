@@ -1,0 +1,37 @@
+@model TrySvn.Models.CmStudentCourse
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    cmStudent
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.cmStudentId, ((IEnumerable<TrySvn.Models.CmStudent>)ViewBag.PossiblecmStudents).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.cmStudentId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.cmStudentId)
+</div>
+<div class="editor-label">
+    clSubject
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.clSubjectId, ((IEnumerable<TrySvn.Models.ClSubject>)ViewBag.PossibleclSubjects).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.clSubjectId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.clSubjectId)
+</div>
+<div class="editor-label">
+    cmTeacher
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.cmTeacherId, ((IEnumerable<TrySvn.Models.CmTeacher>)ViewBag.PossiblecmTeachers).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.cmTeacherId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.cmTeacherId)
+</div>
