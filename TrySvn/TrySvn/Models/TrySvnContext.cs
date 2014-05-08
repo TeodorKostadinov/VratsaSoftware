@@ -29,5 +29,45 @@ namespace TrySvn.Models
 		public DbSet<TrySvn.Models.CmStudent> CmStudents { get; set; }
     	
 		public DbSet<TrySvn.Models.CmTeacher> CmTeachers { get; set; }
+    	
+		public DbSet<TrySvn.Models.ClCategory> ClCategories { get; set; }
+    	
+		public DbSet<TrySvn.Models.ClSubject> ClSubjects { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmStudentSubject> CmStudentSubjects { get; set; }
+		
+		
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<CmStudentSubject>()
+				.HasRequired(c => c.cmStudent)
+				.WithMany()
+				.WillCascadeOnDelete(false);
+			
+			modelBuilder.Entity<CmStudentSubject>()
+			    .HasRequired(s => s.cmTeacher)
+			    .WithMany()
+			    .WillCascadeOnDelete(false);
+			
+			modelBuilder.Entity<CmProject>()
+			    .HasRequired(c => c.clCateogry)
+			    .WithMany()
+			    .WillCascadeOnDelete(false);
+			
+			modelBuilder.Entity<CmProject>()
+			    .HasRequired(co => co.cmCompany)
+			    .WithMany()
+			    .WillCascadeOnDelete(false);
+				
+			base.OnModelCreating(modelBuilder);
+		}
+    	
+		public DbSet<TrySvn.Models.CmCompany> CmCompanies { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmCompanyRepresentative> CmCompanyRepresentatives { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmProject> CmProjects { get; set; }
+    	
+		public DbSet<TrySvn.Models.CmProjectDetail> CmProjectDetails { get; set; }
     }
 }

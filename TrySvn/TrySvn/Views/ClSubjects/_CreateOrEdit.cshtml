@@ -1,0 +1,34 @@
+@model TrySvn.Models.ClSubject
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.name)
+    @Html.ValidationMessageFor(model => model.name)
+</div>
+
+<div class="editor-label">
+    clCategory
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.clCategoryId, ((IEnumerable<TrySvn.Models.ClCategory>)ViewBag.PossibleclCategories).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.clCategoryId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.clCategoryId)
+</div>
+<div class="editor-label">
+    clUniversity
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.clUniversityId, ((IEnumerable<TrySvn.Models.ClUniversity>)ViewBag.PossibleclUniversities).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.clUniversityId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.clUniversityId)
+</div>

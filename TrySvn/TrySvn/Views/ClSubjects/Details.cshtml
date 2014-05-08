@@ -1,0 +1,26 @@
+@model TrySvn.Models.ClSubject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ClSubject</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">@Model.name</div>
+
+    <div class="display-label">clCategory</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.clCategory).ToString()</div>
+
+    <div class="display-label">clUniversity</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.clUniversity).ToString()</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

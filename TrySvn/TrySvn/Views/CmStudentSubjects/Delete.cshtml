@@ -1,0 +1,29 @@
+@model TrySvn.Models.CmStudentSubject
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>CmStudentSubject</legend>
+
+    <div class="display-label">cmStudent</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.cmStudent).ToString()</div>
+
+    <div class="display-label">clSubject</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.clSubject).ToString()</div>
+
+    <div class="display-label">cmTeacher</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.cmTeacher).ToString()</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

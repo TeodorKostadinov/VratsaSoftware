@@ -1,0 +1,42 @@
+@model TrySvn.Models.CmProject
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.title)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.title)
+    @Html.ValidationMessageFor(model => model.title)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.data)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.data)
+    @Html.ValidationMessageFor(model => model.data)
+</div>
+
+<div class="editor-label">
+    cmCompany
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.cmCompanyId, ((IEnumerable<TrySvn.Models.CmCompany>)ViewBag.PossiblecmCompanies).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.cmCompanyId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.cmCompanyId)
+</div>
+<div class="editor-label">
+    clCategory
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.clCategoryId, ((IEnumerable<TrySvn.Models.ClCategory>)ViewBag.PossibleclCategories).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.clCategoryId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.clCategoryId)
+</div>

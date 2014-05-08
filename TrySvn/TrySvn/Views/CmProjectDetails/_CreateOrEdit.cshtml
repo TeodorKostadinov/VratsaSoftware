@@ -1,0 +1,34 @@
+@model TrySvn.Models.CmProjectDetail
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.status)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.status)
+    @Html.ValidationMessageFor(model => model.status)
+</div>
+
+<div class="editor-label">
+    cmProject
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.cmProjectId, ((IEnumerable<TrySvn.Models.CmProject>)ViewBag.PossiblecmProjects).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.cmProjectId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.cmProjectId)
+</div>
+<div class="editor-label">
+    cmStudentSubject
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.cmStudentSubjectId, ((IEnumerable<TrySvn.Models.CmStudentSubject>)ViewBag.PossiblecmStudentSubjects).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.ID.ToString(),
+        Selected = (Model != null) && (option.ID == Model.cmStudentSubjectId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.cmStudentSubjectId)
+</div>
