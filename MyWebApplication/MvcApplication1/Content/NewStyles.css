@@ -1,0 +1,25 @@
+﻿#regButton {
+	margin-left: auto;
+	margin-right:auto;
+	width:40%;
+	background:#7ac0da;
+	text-align:center;
+	color:white;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+#regButton a{
+	text-decoration:none;
+}
+
+#regButton a:hover{
+	text-decoration:none;
+	background:#7ac0da;
+}
+
+#courses .currentcourse:hover {
+	background:grey;
+	cursor: pointer;
+    cursor: hand;
+}

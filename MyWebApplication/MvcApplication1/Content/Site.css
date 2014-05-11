@@ -98,20 +98,23 @@ h5, h6 {
     max-width: 960px;
 }
 
+.content-wrapper .video {
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+
 #body {
     background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
+    margin-top:150px;
 }
 
     .main-content {
-        background: url("../Images/accent.png") no-repeat;
+        background: no-repeat;
         padding-left: 10px;
         padding-top: 30px;
-    }
-
-    .featured + .main-content {
-        background: url("../Images/heroAccent.png") no-repeat;
     }
 
 header .content-wrapper {
@@ -131,7 +134,7 @@ footer {
 .site-title {
     color: #c8c8c8;
     font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
-    font-size: 2.3em;
+    font-size: 5.3em;
     margin: 0;
 }
 
@@ -140,6 +143,13 @@ footer {
     color: #c8c8c8;
     outline: none;
     text-decoration: none;
+}
+
+.site-subtitle {
+	color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 3em;
+    margin: 0;
 }
 
 
@@ -221,6 +231,7 @@ ul#menu {
         background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         color: #3e5667;
         padding: 20px 40px 30px 40px;
+        border-radius: 50px;
     }
 
         .featured hgroup.title h1, .featured hgroup.title h2 {
